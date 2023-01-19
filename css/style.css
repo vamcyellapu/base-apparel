@@ -1218,6 +1218,10 @@ video {
     align-items: flex-end;
   }
 
+  .md\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .md\:place-self-start {
     place-self: start;
   }
