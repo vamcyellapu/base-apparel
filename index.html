@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="grid md:grid-cols-2 gap-10">
+        <img
+          src="./images/logo.svg"
+          class="w-44 p-8 md:w-60 md:place-self-start md:self-end xl:ml-20 2xl:ml-40"
+          alt=""
+        />
+        <div
+          id="hero"
+          class="bg-mobile w-full h-72 bg-no-repeat bg-center bg-cover md:bg-desktop md:grid md:row-span-2 md:w-3/4 md:h-screen md:place-self-end"
+        ></div>
+        <div
+          class="flex text-primary flex-col text-center pt-16 p-10 gap-5 md:text-left max-w-xl md:place-self-start md:self-start xl:ml-20 2xl:ml-40"
+        >
+          <h1
+            class="text-5xl uppercase text-primary font-thin flex flex-col tracking-[10px] gap-2 md:text-7xl"
+          >
+            <span>we're</span>
+            <span class="font-bold text-heading">Coming </span
+            ><span class="font-bold text-heading">soon</span>
+          </h1>
+          <p>
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <div id="input-container" class="mt-5 relative">
+            <div
+              id="input-box"
+              class="border border-primary rounded-full flex pl-6 justify-between items-center relative"
+            >
+              <input
+                type="text"
+                name=""
+                id="input"
+                placeholder="Email Address"
+                class="outline-0 placeholder:text-primary/70 text-heading flex-auto"
+              />
+              <img
+                id="err-icon"
+                src="./images/icon-error.svg"
+                class="hidden text-white absolute right-20 md:right-28"
+                alt=""
+              />
+              <button
+                id="btn"
+                class="bg-gradient-to-r from-gradient3 to-gradient4 py-4 px-7 rounded-full shadow-xl shadow-primary/50 md:px-10 hover:scale-110 transition duration-150"
+              >
+                <img src="./images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+            <p
+              id="err-msg"
+              class="hidden text-secondary absolute left-8 -bottom-8"
+            >
+              Please provide a valid email
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!-- We're coming soon Hello fellow shoppers! We're currently building our new
+fashion store. Add your email below to stay up-to-date with announcements and
+our launch deals. Email Address -->
+<!--   <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
